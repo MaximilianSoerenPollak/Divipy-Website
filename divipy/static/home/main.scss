@@ -1,0 +1,138 @@
+$divipy-color: #00bc8c;
+body{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: $divipy-color !important;
+}
+.s1 {
+    background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1");
+    background-size: cover;
+
+    h1 {
+        color: $divipy-color;
+        text-align: center;
+        margin-left: 0%;
+        margin-top: -15%;
+        padding-top: 30px;
+    }
+
+    #text1 {
+        color: white;
+        margin-left: 5%;
+        margin-top: 25%;
+        font-weight: bold;
+    }
+    #text2 {
+        color: white;
+        margin-left: 5%;
+        font-weight: bold;
+
+    }
+    #explore {
+        color: white;
+        margin: 0;
+        position: relative;
+        bottom: -20%;
+        left: 45%;
+        background-color:$divipy-color;
+    }
+    #login{
+        margin: 0;
+        position: relative;
+        top: -30%;
+        right: -50%;
+        border-color: $divipy-color;
+        a{
+            color: $divipy-color;
+        }
+    }
+    #register{
+        margin: 0;
+        position: relative;
+        right: -65%;
+        background-color: $divipy-color;
+        a{
+            color: white;
+        }
+    }
+}
+
+.s2 {
+    background-image: linear-gradient(#0b1927,#222);
+    background-size: cover;
+
+    #text3 {
+        color: $divipy-color;
+        margin-left: 1%;
+        margin-top: -20%;
+        font-weight: bold;
+    }
+    #text4 {
+        color: $divipy-color;
+        margin-left: 5%;
+        margin-top: 0%;
+        font-weight: bold;
+    }
+    #text5 {
+        color: $divipy-color;
+        margin-left: 10%;
+        margin-top: 0%;
+        font-weight: bold;
+    }
+    #text6, #text7 {
+        color: $divipy-color;
+        font-weight: bold;        
+        position: relative;
+        right: -30%;
+        top: 40%;
+    }
+}
+
+.s3 {
+    background: url("https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1");
+    background-size: cover;
+    h1{
+        color: $divipy-color;
+        position: relative;
+        left: 70%;
+    }
+}
+
+.s4 {
+    background-image: linear-gradient(#222, $divipy-color);
+    background-size: cover;
+    // background: url("https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1");
+    // background-size: cover;
+    h1{
+        color: $divipy-color;
+        position: relative;
+        top: -20%;
+        margin-left: 5%;
+    }
+    
+    #text12 {
+        color: #0b1927;
+        position: relative;
+        text-align: center;
+    }
+
+    #github {
+        margin: 0;
+        position: relative;
+        right: -80%;
+        top: 20%;
+        background-color: #222;
+        a{
+            color: white;
+        }
+    }
+
+}

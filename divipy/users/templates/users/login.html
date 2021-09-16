@@ -1,0 +1,27 @@
+{% extends "divipy/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block title %}
+  {% if title %}
+    <title<>Diviypy - {{ title }}</title>
+  {% else %}
+    <title>Divipy</title>
+  {% endif %}
+{% endblock %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-2">Login</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Login</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Don't have an account yet? <a class="me-2" href="{% url "register" %}">Sign Up</a></small>
+    </div>
+{% endblock content %}

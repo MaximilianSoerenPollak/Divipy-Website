@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Bootstrap CSS styling + css.main styling-->
+        <link
+            href="https://bootswatch.com/5/darkly/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" 
+        integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="{% static "home/main.css" %}"/>
+        <title>Divipy - Welcome </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div id="fullPage">
+            <div class="section s1">
+                <h1 id="Welcome">Welcome to DiviPy</h1>
+                <h2 id="text1">Using the power of Python </h2>
+                <h2 id="text2">to make better investment decisions</h2>
+                <button class="btn" id="explore">Let's explore more</button>    
+                <button class="btn" id="login"><a href="{% url 'login' %}">Login</a></button>
+                <button class="btn" id="register"><a href="{% url 'register' %}">Sign Up</a></button>
+            </div>  
+            <div class="section s2">
+                <h1 id="text3">Analyzing over 40.000 Stocks</h1>
+                <h1 id="text4">to pick out the best ones</h1>
+                <h1 id="text5">for DIVIDENDS investing.</h1>
+                <h2 id="text6">Choose your filters + parameters</h2>
+                <h2 id="text7">and get recommendations</h2>
+            </div>
+            <div class="section s4">
+                <h1 id="text8">This project is proudly open source.</h1>
+                <h1 id="text9">Found a bug?</h1>
+                <h1 id="text10">Have suggestions for improvements?</h1>
+                <h1 id="text11">Or even would want to help out?</h1>
+                <h2 id="text12">just head over to our github page.</h2>
+                <button class="btn" id="github"><a href="https://github.com/MaximilianSoeren/Divipy/tree/Django-Version">GITHUB</a></button>
+            </div>
+            <div class="section s3">
+                <h1>Personal Portfolios</h1>
+                <h1>Risk analysis</h1>
+                <h1>Portfolio suggesstions</h1>
+                <h1>and more</h1>
+            </div>
+
+
+        </div>
+
+        
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous">
+        </script>
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" 
+            integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script>
+            new fullpage("#fullPage", {
+                autoScrolling: true,
+                navigation: true,
+                anchsors: ["section s2"],
+                navigationTooltips: ["Section1", "Section2", "Section3"],
+                showActiveTooltip: true,
+                scrollingSpeed: 1000,
+                controlArrows: false,
+                slidesNavigation: true,
+            })
+            document.getElementById("explore").addEventListener("click", function(){
+                fullpage_api.moveSectionDown()
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    /* background: #fafafa;
+    color: #333333; */
+    margin-top: 1rem;
+  }
+.form-control{
+    background: grey !important;
+}
+input, select, textarea{
+  color: #fafafa;
+}
+/*TODO figure out how to style the login screen nicely with the buttons and all :). */
+
+fieldset div  {
+  margin: 1rem;
+}
+
+/* #login-navbar-button {
+  margin: 0px;
+}
+
+#signup-navbar-button {
+  margin: 0px;
+} */
+
+#sidebar-button {
+ color: #00bc8c;
+}
+#brand-name-nav-bar {
+  color: #00bc8c;
+
+}
+.btn-outline-info {
+  color: #00bc8c;
+  border-color: #00bc8c;
+}
+
+.dropdown-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#devblog-post {
+  overflow-wrap: break-word;
+}

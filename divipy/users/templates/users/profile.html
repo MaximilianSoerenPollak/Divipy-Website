@@ -1,0 +1,27 @@
+{% extends "divipy/base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}
+  {% if title %}
+    <title<>Diviypy - {{ title }}</title>
+  {% else %}
+    <title>Divipy</title>
+  {% endif %}
+{% endblock %}
+{% block content %}
+<div class="content-section">
+    <h2 class="account-heading">{{ user.username }}</h2>
+    <p class="text-secondary">{{ user.email }}</p>
+    <!-- FORM HERE -->
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Profile Info</legend>
+            <p>Change your information below.</p>
+            {{ u_form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Update</button>
+        </div>
+    </form>
+  </div>
+{% endblock content %}

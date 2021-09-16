@@ -1,0 +1,149 @@
+body {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #00bc8c !important;
+}
+
+.s1 {
+  background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1");
+  background-size: cover;
+}
+
+.s1 h1 {
+  color: #00bc8c;
+  text-align: center;
+  margin-left: 0%;
+  margin-top: -15%;
+  padding-top: 30px;
+}
+
+.s1 #text1 {
+  color: white;
+  margin-left: 5%;
+  margin-top: 25%;
+  font-weight: bold;
+}
+
+.s1 #text2 {
+  color: white;
+  margin-left: 5%;
+  font-weight: bold;
+}
+
+.s1 #explore {
+  color: white;
+  margin: 0;
+  position: relative;
+  bottom: -20%;
+  left: 45%;
+  background-color: #00bc8c;
+}
+
+.s1 #login {
+  margin: 0;
+  position: relative;
+  top: -30%;
+  right: -50%;
+  border-color: #00bc8c;
+}
+
+.s1 #login a {
+  color: #00bc8c;
+}
+
+.s1 #register {
+  margin: 0;
+  position: relative;
+  right: -65%;
+  background-color: #00bc8c;
+}
+
+.s1 #register a {
+  color: white;
+}
+
+.s2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0b1927), to(#222));
+  background-image: linear-gradient(#0b1927, #222);
+  background-size: cover;
+}
+
+.s2 #text3 {
+  color: #00bc8c;
+  margin-left: 1%;
+  margin-top: -20%;
+  font-weight: bold;
+}
+
+.s2 #text4 {
+  color: #00bc8c;
+  margin-left: 5%;
+  margin-top: 0%;
+  font-weight: bold;
+}
+
+.s2 #text5 {
+  color: #00bc8c;
+  margin-left: 10%;
+  margin-top: 0%;
+  font-weight: bold;
+}
+
+.s2 #text6, .s2 #text7 {
+  color: #00bc8c;
+  font-weight: bold;
+  position: relative;
+  right: -30%;
+  top: 40%;
+}
+
+.s3 {
+  background: url("https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1");
+  background-size: cover;
+}
+
+.s3 h1 {
+  color: #00bc8c;
+  position: relative;
+  left: 70%;
+}
+
+.s4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#222), to(#00bc8c));
+  background-image: linear-gradient(#222, #00bc8c);
+  background-size: cover;
+}
+
+.s4 h1 {
+  color: #00bc8c;
+  position: relative;
+  top: -20%;
+  margin-left: 5%;
+}
+
+.s4 #text12 {
+  color: #0b1927;
+  position: relative;
+  text-align: center;
+}
+
+.s4 #github {
+  margin: 0;
+  position: relative;
+  right: -80%;
+  top: 20%;
+  background-color: #222;
+}
+
+.s4 #github a {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
